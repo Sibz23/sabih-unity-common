@@ -19,7 +19,7 @@ namespace Sabih.Common.Components
 
         [Header("Clamping")]
         [Tooltip("Clamp pitch (X axis).")]
-        public float minPitch = -80f;
+        public float minPitch = -50f;
         public float maxPitch = 80f;
 
         [Tooltip("Clamp yaw (Y axis).")]
@@ -59,10 +59,6 @@ namespace Sabih.Common.Components
         private void OnLook(InputAction.CallbackContext ctx)
         {
             Vector2 input = ctx.ReadValue<Vector2>();
-
-            // Scale mouse delta for comfort
-            if (ctx.control != null && ctx.control.device is Mouse)
-                input *= mouseSensitivity;
 
             // Apply rotation deltas
             yaw += input.x * sensitivityX * Time.deltaTime;
