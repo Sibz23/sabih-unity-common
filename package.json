@@ -1,0 +1,16 @@
+{
+  "name": "com.sabih.sabihunitycommon",
+  "version": "1.0.0",
+  "displayName": "Sabih Unity Common",
+  "description": "Common scripts",
+  "unity": "2022.3",
+  "keywords": [],
+  "author": {
+    "name": "Sabih",
+    "email": "sabihul23@gmail.com",
+    "url": "https://www.unity3d.com"
+  },
+  "dependencies": {
+    "com.unity.inputsystem": "1.7.0"
+  }
+}
