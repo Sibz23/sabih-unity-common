@@ -1,10 +1,10 @@
 {
   "tagFormat": "v${version}",
+  "branches": ["main"],
   "plugins": [
     ["@semantic-release/commit-analyzer", { "preset": "angular" }],
     "@semantic-release/release-notes-generator",
-    ["@semantic-release/changelog", { "preset": "angular" }],
-    ["@semantic-release/npm", { "npmPublish": false }],
+    ["@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" }],
     [
       "@semantic-release/git",
       {
