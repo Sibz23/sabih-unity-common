@@ -19,7 +19,7 @@ namespace Sabih.Common.Components
 
         [Header("Clamping")]
         [Tooltip("Clamp pitch (X axis).")]
-        public float minPitch = -80f;
+        public float minPitch = -50f;
         public float maxPitch = 80f;
 
         [Tooltip("Clamp yaw (Y axis).")]
